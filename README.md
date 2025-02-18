@@ -106,3 +106,18 @@ npm install -g nodemon
 nodemon index.js
 
 ✅ The server will start at http://localhost:8080/
+
+```/project-folder
+│── index.js
+│── package.json
+│── /views
+│   ├── home.ejs
+│   ├── /includes
+│   │   ├── header.ejs
+│   │   ├── footer.ejs
+│── /public
+│   ├── /css
+│   │   ├── styles.css
+│   ├── /js
+│   │   ├── app.js
+```
