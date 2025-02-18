@@ -46,8 +46,11 @@ console.log(`Server running at http://localhost:${port}`);
 ✅ This creates:
 
 views/ → Contains template files
+
 views/includes/ → Stores reusable partials like headers and footers
+
 public/css/ → Stores CSS files
+
 public/js/ → Stores JavaScript files
 
 #### 5️⃣ Create the Home View
