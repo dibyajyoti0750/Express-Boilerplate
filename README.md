@@ -2,15 +2,15 @@
 
 Follow these steps to set up a basic Express.js boilerplate with EJS as the templating engine and static file support.
 
-### 1️⃣ Initialize the Project
+#### 1️⃣ Initialize the Project
 
 npm init -y
 
-### 2️⃣ Install Required Packages
+#### 2️⃣ Install Required Packages
 
 npm install express ejs
 
-### 3️⃣ Create the Main Server File
+#### 3️⃣ Create the Main Server File
 
 Create a new file named index.js and add the following code:
 const express = require("express");
@@ -36,7 +36,7 @@ app.listen(port, () => {
 console.log(`Server running at http://localhost:${port}`);
 });
 
-### 4️⃣ Create Required Directories
+#### 4️⃣ Create Required Directories
 
 mkdir -p views/includes public/css public/js
 
@@ -47,7 +47,7 @@ views/includes/ → Stores reusable partials like headers and footers
 public/css/ → Stores CSS files
 public/js/ → Stores JavaScript files
 
-### 5️⃣ Create the Home View
+#### 5️⃣ Create the Home View
 
 Inside views/, create a file named home.ejs and add:
 <%- include("includes/header.ejs") %>
@@ -64,7 +64,7 @@ Inside views/, create a file named home.ejs and add:
   <script src="/js/app.js"></script>
 </body>
 
-### 6️⃣ Create the Header and Footer Includes
+#### 6️⃣ Create the Header and Footer Includes
 
 Inside views/includes/, create header.ejs:
 
@@ -81,7 +81,7 @@ Inside views/includes/, create header.ejs:
 
 Inside views/includes/, create footer.ejs
 
-### 7️⃣ Create Static Files
+#### 7️⃣ Create Static Files
 
 ➤ Create the CSS File
 Inside public/css/, create styles.css and add:
@@ -97,7 +97,7 @@ Inside public/js/, create app.js and add:
 
 console.log("JavaScript loaded successfully!");
 
-### 8️⃣ Run the Server with Nodemon
+#### 8️⃣ Run the Server with Nodemon
 
 Install nodemon globally if not already installed:
 
@@ -106,6 +106,8 @@ npm install -g nodemon
 nodemon index.js
 
 ✅ The server will start at http://localhost:8080/
+
+#### 🎯 Project Overview
 
 ```/project-folder
 │── index.js
