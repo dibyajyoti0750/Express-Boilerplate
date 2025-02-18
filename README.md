@@ -4,7 +4,8 @@ Follow these steps to set up a basic Express.js boilerplate with EJS as the temp
 
 #### 1️⃣ Initialize the Project
 
-npm init -y
+`bash`
+`npm init -y`
 
 #### 2️⃣ Install Required Packages
 
@@ -13,7 +14,8 @@ npm install express ejs
 #### 3️⃣ Create the Main Server File
 
 Create a new file named index.js and add the following code:
-const express = require("express");
+
+```const express = require("express");
 const path = require("path");
 
 const app = express();
@@ -35,6 +37,7 @@ res.render("home");
 app.listen(port, () => {
 console.log(`Server running at http://localhost:${port}`);
 });
+```
 
 #### 4️⃣ Create Required Directories
 
@@ -50,7 +53,8 @@ public/js/ → Stores JavaScript files
 #### 5️⃣ Create the Home View
 
 Inside views/, create a file named home.ejs and add:
-<%- include("includes/header.ejs") %>
+
+```<%- include("includes/header.ejs") %>
 
 <body>
   <h1>Welcome Home</h1>
@@ -63,6 +67,7 @@ Inside views/, create a file named home.ejs and add:
   <%- include("includes/footer.ejs") %>
   <script src="/js/app.js"></script>
 </body>
+```
 
 #### 6️⃣ Create the Header and Footer Includes
 
