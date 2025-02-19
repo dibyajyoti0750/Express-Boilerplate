@@ -2,15 +2,15 @@
 
 Follow these steps to set up a basic Express.js boilerplate with EJS as the templating engine and static file support.
 
-#### 1️⃣ Initialize the Project
+#### 1. Initialize the Project
 
 `$ npm init -y`
 
-#### 2️⃣ Install Required Packages
+#### 2. Install Required Packages
 
 `npm install express ejs`
 
-#### 3️⃣ Create the Main Server File
+#### 3. Create the Main Server File
 
 Create a new file named index.js and add the following code:
 
@@ -39,7 +39,7 @@ console.log(`Server running at http://localhost:${port}`);
 });
 ```
 
-#### 4️⃣ Create Required Directories
+#### 4. Create Required Directories
 
 `mkdir -p views/includes public/css public/js`
 
@@ -53,7 +53,7 @@ public/css/ → Stores CSS files
 
 public/js/ → Stores JavaScript files
 
-#### 5️⃣ Create the Home View
+#### 5. Create the Home View
 
 Inside views/, create a file named home.ejs and add:
 
@@ -73,7 +73,7 @@ Inside views/, create a file named home.ejs and add:
 
 ```
 
-#### 6️⃣ Create the Header and Footer Includes
+#### 6. Create the Header and Footer Includes
 
 Inside views/includes/, create header.ejs:
 
@@ -92,7 +92,7 @@ Inside views/includes/, create header.ejs:
 
 Inside views/includes/, create footer.ejs
 
-#### 7️⃣ Create Static Files
+#### 7. Create Static Files
 
 ➤ Create the CSS File
 Inside public/css/, create styles.css and add:
@@ -112,7 +112,7 @@ Inside public/js/, create app.js and add:
 console.log("JavaScript loaded successfully!");
 ```
 
-#### 8️⃣ Run the Server with Nodemon
+#### 8. Run the Server with Nodemon
 
 Install nodemon globally if not already installed:
 
