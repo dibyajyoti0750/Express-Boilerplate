@@ -8,7 +8,7 @@ Follow these steps to set up a basic Express.js boilerplate with EJS as the temp
 
 #### 2. Install Required Packages
 
-`npm install express ejs`
+`$ npm install express ejs`
 
 #### 3. Create the Main Server File
 
@@ -21,23 +21,18 @@ const path = require("path");
 const app = express();
 const port = 8080;
 
-// Request data parsing middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Set EJS as the templating engine
 app.set("view engine", "ejs");
-app.set("views", path.join(\_\_dirname, "views"));
+app.set("views", path.join(__dirname, "views"));
 
-// Serve static files
-app.use(express.static(path.join(\_\_dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 
-// Home route
 app.get("/", (req, res) => {
 res.render("home");
 });
 
-// Start the server
 app.listen(port, () => {
 console.log(`Server running at http://localhost:${port}`);
 });
@@ -45,21 +40,21 @@ console.log(`Server running at http://localhost:${port}`);
 
 #### 4. Create Required Directories
 
-`mkdir -p views/includes public/css public/js`
+`$ mkdir -p views/includes public/css public/js`
 
 ✅ This creates:
 
-views/ → Contains template files
+views/ → Contains template files.
 
-views/includes/ → Stores reusable partials like headers and footers
+views/includes/ → Stores reusable partials like headers and footers.
 
-public/css/ → Stores CSS files
+public/css/ → Stores CSS files.
 
-public/js/ → Stores JavaScript files
+public/js/ → Stores JavaScript files.
 
 #### 5. Create the Home View
 
-Inside views/, create a file named home.ejs and add:
+Inside views/ create a file named `home.ejs` and add:
 
 ```
 <%- include("includes/header.ejs") %>
@@ -74,12 +69,11 @@ Inside views/, create a file named home.ejs and add:
   <%- include("includes/footer.ejs") %>
   <script src="/js/app.js"></script>
 </body>
-
 ```
 
 #### 6. Create the Header and Footer Includes
 
-Inside views/includes/, create header.ejs:
+Inside views/includes/ create `header.ejs`:
 
 ```
 <!DOCTYPE html>
@@ -94,12 +88,12 @@ Inside views/includes/, create header.ejs:
 </html>
 ```
 
-Inside views/includes/, create footer.ejs
+Inside views/includes/ `create footer.ejs`
 
 #### 7. Create Static Files
 
 ➤ Create the CSS File
-Inside public/css/, create styles.css and add:
+Inside public/css/ create `styles.css` and add:
 
 ```
 body {
@@ -110,7 +104,7 @@ padding: 20px;
 ```
 
 ➤ Create the JavaScript File
-Inside public/js/, create app.js and add:
+Inside public/js/ create `app.js` and add:
 
 ```
 console.log("JavaScript loaded successfully!");
