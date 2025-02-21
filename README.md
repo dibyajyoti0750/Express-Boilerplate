@@ -57,7 +57,7 @@ public/js/ → Stores JavaScript files.
 Inside views/ create a file named `home.ejs` and add:
 
 ```
-<%- include("includes/header.ejs") %>
+<%- include("includes/header.ejs", {title:"Home"}) %>
 <body>
   <h1>Welcome Home</h1>
   <p>
@@ -81,7 +81,7 @@ Inside views/includes/ create `header.ejs`:
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title><%= title %></title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
 </html>
