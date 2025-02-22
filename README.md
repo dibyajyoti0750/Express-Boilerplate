@@ -12,7 +12,7 @@ Follow these steps to set up a basic Express.js boilerplate with EJS as the temp
 
 #### 3. Create the Main Server File
 
-Create a new file named index.js and add the following code:
+Create a new file named `index.js` and add the following code:
 
 ```
 const express = require("express");
